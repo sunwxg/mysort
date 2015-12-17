@@ -2,6 +2,9 @@ package mysort
 
 import "reflect"
 
+//Compare to increasing order: a < b return true
+//
+//Compare to decreasing order: a > b return true
 type Compare func(a, b interface{}) bool
 
 func swapValue(a, b reflect.Value) {

@@ -1,10 +1,10 @@
 package mysort_test
 
 import (
-	"fmt"
 	"math/rand"
-	"mypkg/mysort"
 	"testing"
+
+	"github.com/sunwxg/mysort"
 )
 
 //a > b = ture
@@ -127,7 +127,6 @@ func TestDown(t *testing.T) {
 		}
 	}
 
-	fmt.Println(listInsert)
 	for i, v := range listInsert {
 		if v != listHeapSort[i] {
 			t.Fatalf("HeapSort don't equal HeapSort")
